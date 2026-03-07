@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <!-- Title   -->
+  <title> Error </title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+  <!-- Container carrying all the pages content -->
+  <div class="container">
+
+    <!-- Navgiation bar -->
+    <nav class="main-nav">
+      <img src="./assets/images/logo.svg" alt="Weather App Logo">
+      <button class="units-toggle">
+        <img src="./assets/images/icon-units.svg" alt="Thermometer Icon">
+        <span>Units</span>
+        <img src="./assets/images/icon-dropdown.svg" alt="Arrow Down Icon">
+      </button>
+    </nav>
+
+    <!-- Error Hero Section -->
+    
+    <div class="error-page">
+        <img src="./assets/images/icon-error.svg" alt="Error Hero Image" class="error-icon">
+        <h1>Something went wrong</h1>
+        <p>We couldn't connect to the server (API error). Please try again in a few moments.</p>
+        <a href="index.html" class="retry">
+            <img src="./assets/images/icon-retry.svg" alt="Retry Icon">
+            <span>Retry</span>
+        </a>
+    </div>
+    
+  </div>
+
+</body>
+</html>

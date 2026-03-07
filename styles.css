@@ -1,7 +1,14 @@
+/* CSS reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+a, a:link, a:visited, a:hover, a:active, a:focus, a:focus-visible {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* - Mobile: 375px
@@ -11,13 +18,13 @@
 /* Fonts */
 @font-face {
         font-family: 'DM Sans';
-        src: url('https://fonts.google.com/specimen/DM+Sans');
+        src: url('assets/fonts/DM_Sans/DM+Sans-VariableFont_wght.ttf');
         font-weight: 300, 500, 600, 600i, 700;
     }
     
     @font-face {
         font-family: 'Bricolage Grotesque';
-        src: url('https://fonts.google.com/specimen/Bricolage+Grotesque');
+        src: url('assets/fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf');
         font-weight: 700;
     }
 
@@ -72,6 +79,7 @@ h1, h2, h3 {
     width: 90%;
     max-width: 1440px;
     margin: 0 auto;
+    margin-top: 1.5rem;
 }
 
 /* Navbar CSS */
@@ -89,8 +97,68 @@ h1, h2, h3 {
     background-color: var(--neutral-700);
     border: none;
     border-radius: 0.5rem;
-    padding: 0.9rem 1rem;
+    padding: 0.75rem 1rem;
     color: var(--neutral-0);
     font-size: 1rem;
     cursor: pointer;
+}
+
+
+/* Error Page CSS  */
+.error-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+    height: 80vh;
+    text-align: center;
+    gap: 1.5rem;
+}
+.error-page h1 {
+    font-size: 3rem;
+}
+.error-page p {
+    font-size: 1.25rem;
+    color: var(--neutral-300);
+    word-break: break-word;
+    max-width: 450px;
+}
+.error-page a {
+    color: var(--blue-500);
+    text-decoration: none;
+    font-weight: 500;
+}
+.error-page a:hover {
+    text-decoration: underline;
+}
+.error-page a:active {
+    color: var(--blue-700);
+}
+.error-page .error-icon {
+    width: 2rem;
+    height: auto;
+}
+
+.error-page a, a:hover, a:active {
+    text-decoration: none !important;
+    color: var(--neutral-0) !important;
+}
+
+.error-page .retry {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--neutral-700);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.6rem 1rem;
+    color: var(--neutral-0);
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.error-page .retry img {
+    width: 1rem;
+    height: auto;
 }
