@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* - Mobile: 375px
+- Desktop: 1440px */
+
+
+/* Fonts */
+@font-face {
+        font-family: 'DM Sans';
+        src: url('https://fonts.google.com/specimen/DM+Sans');
+        font-weight: 300, 500, 600, 600i, 700;
+    }
+    
+    @font-face {
+        font-family: 'Bricolage Grotesque';
+        src: url('https://fonts.google.com/specimen/Bricolage+Grotesque');
+        font-weight: 700;
+    }
+
+/* Project Copyright Styles */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root {
+    /* Colors */
+    
+    /* Neutral */
+
+    --neutral-900: hsl(243, 96%, 9%);
+    --neutral-800: hsl(243, 27%, 20%);
+    --neutral-700: hsl(243, 23%, 24%);
+    --neutral-600: hsl(243, 23%, 30%);
+    --neutral-300: hsl(240, 6%, 70%);
+    --neutral-200: hsl(250, 6%, 84%);
+    --neutral-0: hsl(0, 0%, 100%);
+
+    /* Orange */
+
+    --orange-500: hsl(28, 100%, 52%);
+
+    /* Blue */
+
+    --blue-500: hsl(233, 67%, 56%);
+    --blue-700: hsl(248, 70%, 36%);
+}
+
+body {
+
+    /* Background */
+    background-color: var(--neutral-900);
+    
+    /* Typography */
+
+    font-size: 18px;
+    color: var(--neutral-0);
+    
+    /* Font */
+    font-family: 'DM Sans', sans-serif;
+    
+}
+
+h1, h2, h3 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+/* General Container CSS  */
+.container {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Navbar CSS */
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.units-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--neutral-700);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.9rem 1rem;
+    color: var(--neutral-0);
+    font-size: 1rem;
+    cursor: pointer;
+}
