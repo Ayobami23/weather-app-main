@@ -38,9 +38,9 @@
       <form class="search-form">
         <div class="search-input">
           <img src="./assets/images/icon-search.svg" alt="Search Icon">
-          <input type="text" placeholder="Search for a place..." required>
+          <input id="location" type="text" placeholder="Search for a place..." required>
         </div>
-        <button type="submit">Search</button>
+        <button id="search-button" type="submit">Search</button>
       </form>
 
       <!-- Display Goes Here -->
@@ -49,23 +49,36 @@
           <!-- First Column  -->
           <div class="box1">
             <!-- Country Name -->
-            <div class="country">
-              <p>Loading...</p>
+            <div class="country-card">
+              <div class="country-flex">
+                <h3 id="country-name"></h3>
+              <p id="current-date"></p>
+              </div>
+
+              <div class="weather-flex">
+                <img src="./assets/images/icon-sunny.webp" alt="Weather Icon">
+                <h1 id="temperature"></h1>
+              </div>
+              
             </div>
 
             <!-- Temeprature grid -->
             <div class="temperature-grid">
               <div class="feels-like">
                 <p>Feels like</p>
+                <span id="feels-like">_</span>
               </div>
               <div class="humidity">
                 <p>Humidity</p>
+                <span id="humidity">_</span>
               </div>
               <div class="wind">
                 <p>Wind</p>
+                <span id="wind">_</span>
               </div>
               <div class="precipitation">
                 <p>Precipitation</p>
+                <span id="precipitation">_</span>
               </div>
             </div>
 
@@ -100,6 +113,13 @@
 
           <!-- Second Column  -->
           <div class="box2">
+            <div class="head">
+              <h2>Hourly Forecast</h2>
+              <button>
+                <input type="button">
+                <img src="./assets/images/icon-dropdown.svg" alt="Dropdown Icon">
+              </button>
+            </div>
 
           </div>
         </div>
@@ -111,52 +131,8 @@
 
 
 
-    
+    <script src="scripts/main.js" type="module"></script>
   </div>
-
-
-<!-- 
-  Units
-
-  Switch to Imperial/Metric
-
-  Temperature
-
-  Celsius (°C)
-  Fahrenheit (°F)
-
-  Wind Speed
-
-  km/h
-  mph
-
-  Precipitation
-
-  Millimeters (mm)
-  Inches (in)
-
-  How's the sky looking today?
-
-  Search for a city, e.g., New York
-  Search
-
-  Feels like -->
-  <!-- Insert temperature here -->
-
-  <!-- Humidity -->
-  <!-- Insert humidity here -->
-
-  <!-- Wind -->
-  <!-- Insert wind here -->   
-  
-  <!-- Precipitation -->
-  <!-- Insert precipitation here -->
-
-  <!-- Daily forecast -->
-  <!-- Insert daily forecast for the next 7 days here -->
-
-  <!-- Hourly forecast -->
-  <!-- Insert hourly forecast for the selected day here -->
 
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 

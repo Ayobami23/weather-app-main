@@ -143,6 +143,7 @@ h1, h2, h3 {
 .hero .search-form input:focus {
     outline: 2px solid var(--blue-500);
     outline-offset: 2px;
+    background-color: var(--neutral-700);
 }
 
 .hero .search-form .search-input {
@@ -188,11 +189,46 @@ h1, h2, h3 {
     gap: 2rem;
 }
 
-.hero-grid .box1 .country,
+.hero-grid .box1 .country-card,
 .hero-grid .box1 .daily-forecast{
     background-color: var(--neutral-700);
     height: 100%;
     border-radius: 1rem;
+}
+
+.hero-grid .box1 .country-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem;
+    background: url('assets/images/bg-today-large.svg') no-repeat center center;
+    background-size: cover;
+}
+
+.hero-grid .box1 .country-card .country-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+}
+
+.hero-grid .box1 .country-card .weather-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-grid .box1 .country-card .weather-flex h1 {
+    font-size: 4rem;
+}
+
+.hero-grid .box1 .country-card img {
+    width: 7rem;
+    height: auto;
+    margin-right: 1rem;
+    margin: auto;
 }
 
 .hero-grid .box1 .temperature-grid {
@@ -264,7 +300,7 @@ h1, h2, h3 {
     align-items: center;
     gap: 1rem;
 }
-.box1 .country {
+.box1 .country-card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
