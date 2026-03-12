@@ -20,7 +20,7 @@ async function getCoordinates(place) {
 // Function to fetch weather data using the Open-Meteo Weather API:
 
 const URL1 = 'https://api.open-meteo.com/v1/forecast?';
-const URL2 = '&daily=temperature_2m_max,temperature_2m_min,rain_sum,showers_sum,snowfall_sum,precipitation_sum,sunrise,sunset&hourly=temperature_2m,rain,showers,snowfall&current=temperature_2m,relative_humidity_2m,apparent_temperature,is_day,precipitation,wind_speed_10m,wind_direction_10m,rain&timezone=auto';
+const URL2 = '&daily=temperature_2m_max,temperature_2m_min,weather_code&hourly=temperature_2m,rain,showers,snowfall&current=temperature_2m,relative_humidity_2m,apparent_temperature,is_day,precipitation,wind_speed_10m,wind_direction_10m,weather_code&timezone=auto';
 
 export async function fetchWeather(place) {
   const { lat, lon, name, country } = await getCoordinates(place);

@@ -66,7 +66,7 @@
             <div class="temperature-grid">
               <div class="feels-like">
                 <p>Feels like</p>
-                <span id="feels-like">_</span>
+                <span id="feels-like" class="active">_</span>
               </div>
               <div class="humidity">
                 <p>Humidity</p>
@@ -84,29 +84,16 @@
 
             <!-- Daily Forecast grid -->
             <div class="daily-forecast-grid">
-              <p>Daily Forecast</p>
-              <div class="forecast-grid">
-                <div class="day1">
-                  <small>Day 1</small>
-                </div>
-                <div class="day2">
-                  <small>Day 2</small>
-                </div> 
-                <div class="day3">
-                  <small>Day 3</small>
-                </div>
-                <div class="day4">
-                  <small>Day 4</small>
-                </div>
-                <div class="day5">
-                  <small>Day 5</small>
-                </div>
-                <div class="day6">
-                  <small>Day 6</small>
-                </div>
-                <div class="day7">
-                  <small>Day 7</small>
-                </div>      
+              <p>Daily forecast</p>
+              <div class="forecast-grid" id="forecast-grid">
+                <!-- 7 Days -->
+                <div class="days" id ="day"></div>     
+                <div class="days" id ="day"></div>
+                <div class="days" id ="day"></div>     
+                <div class="days" id ="day"></div>     
+                <div class="days" id ="day"></div>
+                <div class="days" id ="day"></div>     
+                <div class="days" id ="day"></div>     
               </div>
             </div>
           </div>

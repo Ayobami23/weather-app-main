@@ -24,7 +24,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus, a:focus-visible {
     
     @font-face {
         font-family: 'Bricolage Grotesque';
-        src: url('assets/fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf');
+        src: url('assets/fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz.ttf');
         font-weight: 700;
     }
 
@@ -170,23 +170,22 @@ h1, h2, h3 {
 }
 
 
-/* Display CSS */
+/* API Display CSS */
 .hero-grid {
     display: grid;
     grid-template-columns: 1fr 0.5fr;
-    gap: 1.5rem;
+    gap: .5rem;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     height: 100%;
 }
 
 .hero-grid .box1 {
-    border-radius: 0.5rem;
-    padding: 1.5rem;
+    margin: .5rem;
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 2.5fr 1.5fr 2fr;
     align-items: center;
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 .hero-grid .box1 .country-card,
@@ -213,6 +212,17 @@ h1, h2, h3 {
     align-items: flex-start;
 }
 
+.hero-grid .box1 .country-card .country-flex h2 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.hero-grid .box1 .country-card .country-flex p {
+    font-size: 1.1rem;
+    color: var(--neutral-200);
+}
+
 .hero-grid .box1 .country-card .weather-flex {
     display: flex;
     flex-direction: row;
@@ -221,7 +231,10 @@ h1, h2, h3 {
 }
 
 .hero-grid .box1 .country-card .weather-flex h1 {
-    font-size: 4rem;
+    font-size: 5rem;
+    font-style: italic;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 600;
 }
 
 .hero-grid .box1 .country-card img {
@@ -235,8 +248,12 @@ h1, h2, h3 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.25rem;
-    height: 50%;
-    
+    height: 100%;
+    padding-bottom: 2rem;
+}
+
+.hero-grid .box1 .temperature-grid span {
+    font-size: 1.7rem;
 }
 
 .hero-grid .box1 .temperature-grid .feels-like,
@@ -248,15 +265,15 @@ h1, h2, h3 {
     padding: 1rem 1.2rem;
     background-color: var(--neutral-700);
     flex-direction: column;
-    gap: 0.5rem;
-    border-radius: .7rem;
+    justify-content: space-between;
+    border-radius: .8rem;
     text-align: left;
 }
 
 .hero-grid .box1 .daily-forecast-grid {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     height: 100%;
 }
 
@@ -274,31 +291,49 @@ h1, h2, h3 {
     height: 100%;
 }
 
-.hero-grid .box1 .daily-forecast-grid .forecast-grid .day1,
-.hero-grid .box1 .daily-forecast-grid .forecast-grid .day2,
-.hero-grid .box1 .daily-forecast-grid .forecast-grid .day3,
-.hero-grid .box1 .daily-forecast-grid .forecast-grid .day4,
-.hero-grid .box1 .daily-forecast-grid .forecast-grid .day5,
-.hero-grid .box1 .daily-forecast-grid .forecast-grid .day6,
-.hero-grid .box1 .daily-forecast-grid .forecast-grid .day7 {
+.hero-grid .box1 .daily-forecast-grid .forecast-grid .days{
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
     background-color: var(--neutral-700);
-    padding: .5rem .2rem;
-    border-radius: .7rem;
-    text-align: left;
+    padding: .75rem;
+    border-radius: .65rem;
+    justify-content: space-between;
+    align-items: center;
     height: 100%;
 }
 
+.hero-grid .box1 .daily-forecast-grid .forecast-grid .days span {
+    font-size: 1rem;
+}
+
+.hero-grid .box1 .daily-forecast-grid .forecast-grid .days img {
+    width: 3rem;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.hero-grid .box1 .daily-forecast-grid .forecast-grid .days .temp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    width: 100%;
+}
+
+/* Second Grid Box CSS   */
+
 .hero-grid .box2 {
     background-color: var(--neutral-700);
-    border-radius: 0.5rem;
+    border-radius: 0.7rem;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    margin: .5rem ;
 }
 .box1 .country-card {
     display: grid;
